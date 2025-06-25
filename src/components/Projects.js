@@ -5,64 +5,34 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with user authentication, payment processing, and admin dashboard. Built with modern web technologies for optimal performance.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe API", "JWT"],
+      title: "Document Processing Web Application",
+      description: "A web application that allows users to upload and process documents. Built with modern web technologies for optimal performance.",
+      technologies: ["Laravel", "MySQL", "phpMyAdmin"],
       image: "bg-gradient-to-br from-green-400 to-blue-500",
-      demoUrl: "https://demo-ecommerce.com",
-      githubUrl: "https://github.com/yourusername/ecommerce-platform",
-      challenges: "Implemented real-time inventory management and optimized database queries for better performance."
+      demoUrl: "https://github.com/drineruu/driner-document-processing",
+      githubUrl: "https://github.com/drineruu/driner-document-processing",
+      challenges: "This project is a web application that allows users to upload and process documents. It is built with Laravel and MySQL."
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, team collaboration features, and productivity analytics.",
-      technologies: ["Vue.js", "Laravel", "MySQL", "Socket.io", "Redis"],
+      title: "UB Telecare",
+      description: "Telemedicine system with multiple user roles and video call functionalities",
+      technologies: ["Vue.js", "Laravel", "MySQL", "WebRTC"],
       image: "bg-gradient-to-br from-purple-400 to-pink-500",
-      demoUrl: "https://demo-taskmanager.com",
-      githubUrl: "https://github.com/yourusername/task-manager",
-      challenges: "Solved real-time synchronization challenges and implemented efficient caching strategies."
+      demoUrl: "https://github.com/drineruu/ub-telecare",
+      githubUrl: "https://github.com/drineruu/ub-telecare",
+      challenges: "This project is a telemedicine system with multiple user roles and video call functionalities. It is built with Vue.js and Laravel."
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "A responsive weather application with location-based forecasts, interactive maps, and personalized weather alerts.",
-      technologies: ["React", "Python", "FastAPI", "PostgreSQL", "Chart.js"],
+      title: "Succulent Alpha Order Management System (SAOMS)",
+      description: "A simple e-commerce system for succulent products",
+      technologies: ["Laravel", "MySQL", "phpMyAdmin"],
       image: "bg-gradient-to-br from-yellow-400 to-orange-500",
-      demoUrl: "https://demo-weather.com",
-      githubUrl: "https://github.com/yourusername/weather-dashboard",
-      challenges: "Integrated multiple weather APIs and implemented smart caching for better user experience."
+      demoUrl: "https://github.com/drineruu/saoms",
+      githubUrl: "https://github.com/drineruu/saoms",
+      challenges: "This project is a simple e-commerce system for succulent products. It is built with Laravel and MySQL."
     },
-    {
-      id: 4,
-      title: "Social Media Analytics",
-      description: "A comprehensive analytics platform for social media managers with data visualization, automated reporting, and trend analysis.",
-      technologies: ["Angular", "Node.js", "PostgreSQL", "D3.js", "Docker"],
-      image: "bg-gradient-to-br from-indigo-400 to-cyan-500",
-      demoUrl: "https://demo-analytics.com",
-      githubUrl: "https://github.com/yourusername/social-analytics",
-      challenges: "Processed large datasets efficiently and created intuitive data visualizations."
-    },
-    {
-      id: 5,
-      title: "Learning Management System",
-      description: "An educational platform with course management, progress tracking, interactive quizzes, and video streaming capabilities.",
-      technologies: ["React", "Django", "PostgreSQL", "AWS S3", "WebRTC"],
-      image: "bg-gradient-to-br from-teal-400 to-green-500",
-      demoUrl: "https://demo-lms.com",
-      githubUrl: "https://github.com/yourusername/learning-management",
-      challenges: "Implemented secure video streaming and designed scalable architecture for concurrent users."
-    },
-    {
-      id: 6,
-      title: "Portfolio Website",
-      description: "A modern, responsive portfolio website built with React and Tailwind CSS, optimized for performance and SEO.",
-      technologies: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
-      image: "bg-gradient-to-br from-red-400 to-purple-500",
-      demoUrl: "https://your-portfolio.com",
-      githubUrl: "https://github.com/yourusername/portfolio",
-      challenges: "Achieved perfect Lighthouse scores and implemented smooth animations without performance impact."
-    }
   ];
 
   return (
@@ -140,7 +110,7 @@ const Projects = () => {
 
         <div className="text-center mt-12">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/drineruu"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 btn-secondary px-6 py-3"

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import profileImage from '../assets/images/driner-chibi.png';
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -17,9 +18,13 @@ const Hero = () => {
           <div className="w-32 h-32 mx-auto mb-8 relative">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full p-1">
               <img 
-                src="/driner-chibi.png" 
+                src={profileImage}
                 alt="Driner - Full Stack Developer" 
                 className="w-full h-full object-cover rounded-full bg-gray-900"
+                onError={(e) => {
+                  console.error('Image failed to load:', e.target.src);
+                }}
+                onLoad={() => console.log('Image loaded successfully')}
               />
             </div>
           </div>
@@ -29,7 +34,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-6 max-w-3xl mx-auto">
-            Full Stack Developer & Software Engineer
+            Software Engineer
           </p>
           
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
@@ -54,7 +59,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-16">
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/drineruu" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-200"
@@ -62,7 +67,7 @@ const Hero = () => {
               <Github size={24} />
             </a>
             <a 
-              href="https://linkedin.com/in/yourusername" 
+              href="https://linkedin.com/in/jnerfamilaran" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-200"
@@ -70,7 +75,7 @@ const Hero = () => {
               <Linkedin size={24} />
             </a>
             <a 
-              href="mailto:your.email@example.com"
+              href="mailto:jnerfamilaran@gmail.com"
               className="text-gray-400 hover:text-white transition-colors duration-200"
             >
               <Mail size={24} />

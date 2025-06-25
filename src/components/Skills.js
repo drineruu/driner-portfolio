@@ -7,9 +7,9 @@ const Skills = () => {
       title: "Programming Languages",
       icon: <Code size={24} />,
       skills: [
+        { name: "PHP", level: 95 },
         { name: "JavaScript", level: 90 },
-        { name: "Python", level: 85 },
-        { name: "PHP", level: 80 },
+        { name: "Python", level: 75 },
         { name: "TypeScript", level: 75 }
       ]
     },
@@ -17,50 +17,50 @@ const Skills = () => {
       title: "Frontend Frameworks",
       icon: <Globe size={24} />,
       skills: [
-        { name: "React", level: 90 },
-        { name: "Vue.js", level: 85 },
+        { name: "Vue.js", level: 90 },
+        { name: "React", level: 80 },
         { name: "Tailwind CSS", level: 90 },
-        { name: "Bootstrap", level: 85 }
+        { name: "Bootstrap", level: 80 }
       ]
     },
     {
       title: "Backend Technologies",
       icon: <Server size={24} />,
       skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Laravel", level: 80 },
-        { name: "Express.js", level: 85 },
-        { name: "RESTful APIs", level: 90 }
+        { name: "Laravel", level: 95 },
+        { name: "RESTful APIs", level: 90 },
+        { name: "Node.js", level: 80 },
+        { name: "Express.js", level: 80 },
       ]
     },
     {
       title: "Databases",
       icon: <Database size={24} />,
       skills: [
-        { name: "MySQL", level: 85 },
+        { name: "MySQL", level: 95 },
         { name: "PostgreSQL", level: 80 },
         { name: "MongoDB", level: 75 },
-        { name: "Redis", level: 70 }
+        { name: "Redis", level: 80 }
       ]
     },
     {
       title: "Development Tools",
       icon: <Settings size={24} />,
       skills: [
-        { name: "Git & GitHub", level: 90 },
-        { name: "Docker", level: 75 },
-        { name: "Postman", level: 85 },
-        { name: "VS Code", level: 95 }
+        { name: "Git & GitHub", level: 95 },
+        { name: "Docker", level: 95 },
+        { name: "Postman", level: 90 },
+        { name: "VS Code and Cursor AI", level: 95 }
       ]
     },
     {
       title: "Cloud & DevOps",
       icon: <Zap size={24} />,
       skills: [
-        { name: "AWS", level: 70 },
-        { name: "Vercel", level: 85 },
+        { name: "Linux", level: 80 },
         { name: "GitHub Actions", level: 75 },
-        { name: "Linux", level: 80 }
+        { name: "AWS", level: 70 },
+        { name: "", level: 0 },
       ]
     }
   ];

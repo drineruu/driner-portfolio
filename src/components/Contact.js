@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, MessageSquare } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Instagram, MessageSquare } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -28,20 +28,20 @@ const Contact = () => {
     {
       icon: <Mail size={24} />,
       title: "Email",
-      content: "your.email@example.com",
-      link: "mailto:your.email@example.com"
+      content: "jnerfamilaranr@gmail.com",
+      link: "mailto:jnerfamilaran@gmail.com"
     },
     {
       icon: <Phone size={24} />,
       title: "Phone",
-      content: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      content: "+63 (96) 8733 2518",
+      link: "tel:63 (96) 8733 2518"
     },
     {
       icon: <MapPin size={24} />,
       title: "Location",
-      content: "San Francisco, CA",
-      link: "https://maps.google.com/?q=San+Francisco,CA"
+      content: "Baguio City, Philippines",
+      link: "https://maps.google.com/?q=Baguio City,Philippines"
     }
   ];
 
@@ -49,27 +49,21 @@ const Contact = () => {
     {
       icon: <Github size={24} />,
       name: "GitHub",
-      url: "https://github.com/yourusername",
+      url: "https://github.com/drineruu",
       color: "hover:text-gray-400"
     },
     {
       icon: <Linkedin size={24} />,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://linkedin.com/in/jnerfamilaran",
       color: "hover:text-blue-400"
     },
     {
-      icon: <Twitter size={24} />,
-      name: "Twitter",
-      url: "https://twitter.com/yourusername",
+      icon: <Instagram size={24} />,
+      name: "Instagram",
+      url: "https://www.instagram.com/dri.ner/",
       color: "hover:text-sky-400"
     },
-    {
-      icon: <MessageSquare size={24} />,
-      name: "Blog",
-      url: "https://yourblog.com",
-      color: "hover:text-green-400"
-    }
   ];
 
   return (
@@ -157,7 +151,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-white transition-colors duration-200"
-                    placeholder="Driner"
+                    placeholder="Your Name"
                   />
                 </div>
                 <div>

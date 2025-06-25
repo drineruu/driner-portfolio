@@ -5,19 +5,19 @@ const Education = () => {
   const education = [
     {
       degree: "Bachelor of Science in Computer Science",
-      institution: "University of Technology",
-      location: "California, USA",
-      period: "2015 - 2019",
-      gpa: "3.8/4.0",
-      relevant: ["Data Structures & Algorithms", "Database Systems", "Web Development", "Software Engineering"]
+      institution: "University of Baguio",
+      location: "Baguio City, Philippines",
+      period: "2019 - 2023",
+      gpa: "Cum Laude",
+      relevant: ["Cum Laude", "Dean's Lister", "Best Thesis", "Data Structures & Algorithms", "Database Systems", "Web Development", "Software Engineering"]
     },
     {
-      degree: "Full Stack Web Development Bootcamp",
-      institution: "Code Academy Pro",
-      location: "Online",
-      period: "2019",
-      gpa: "Graduated with Distinction",
-      relevant: ["MERN Stack", "DevOps", "Testing", "Project Management"]
+      degree: "Science, Technology, Engineering and Mathematics (STEM)",
+      institution: "University of the Cordilleras",
+      location: "Baguio City, Philippines",
+      period: "2017 - 2019",
+      gpa: "With Honors",
+      relevant: ["Excel Sheet", "Powerpoint", "Word", "Internet", "Microsoft Office"]
     }
   ];
 

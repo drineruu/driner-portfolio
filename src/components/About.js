@@ -1,5 +1,6 @@
 import React from 'react';
 import { Code, Database, Globe, Server } from 'lucide-react';
+import Image from '../assets/images/driner-chibi.png';
 
 const About = () => {
   const techStack = [
@@ -21,10 +22,14 @@ const About = () => {
           {/* Professional Photo */}
           <div className="order-2 lg:order-1">
             <div className="w-80 h-80 mx-auto">
-              <img 
-                src="/driner-chibi.png" 
+            <img 
+                src={Image}
                 alt="Driner - Full Stack Developer" 
                 className="w-full h-full object-cover rounded-2xl shadow-xl border-4 border-blue-500/20"
+                onError={(e) => {
+                  console.error('Image failed to load:', e.target.src);
+                }}
+                onLoad={() => console.log('Image loaded successfully')}
               />
             </div>
           </div>

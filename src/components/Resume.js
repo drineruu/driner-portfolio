@@ -4,36 +4,38 @@ import { Download, FileText, MapPin, Calendar, Briefcase } from 'lucide-react';
 const Resume = () => {
   const workExperience = [
     {
-      title: "Senior Full Stack Developer",
-      company: "Tech Solutions Inc.",
-      location: "Remote",
-      period: "2022 - Present",
+      title: "Software Engineer",
+      company: "YNS Philippines Inc.",
+      location: "Makati City, Philippines",
+      period: "June 2023 - Present",
       responsibilities: [
-        "Led development of 3 major web applications using React and Node.js",
-        "Improved application performance by 40% through optimization",
-        "Mentored 5 junior developers and conducted code reviews"
+        "Contributed to a large-scale project managing garbage collection, contracts, routes, employees, CO₂ emissions, and collection sites.",
+        "Skilled in full-stack development using Laravel, Vue.js, JavaScript, Python, MySQL, Node.js, phpMyAdmin, and Docker.",
+        "Built and maintained complex backend logic for route, site, employee, schedule, and contract management.",
+        "Improved code quality through active code reviews and regular performance optimizations.",
+        "Refactored legacy code to reduce execution time and streamline system processes."
       ]
     },
     {
-      title: "Frontend Developer",
-      company: "Digital Agency Co.",
-      location: "New York, NY",
-      period: "2020 - 2022",
+      title: "Software Developer Intern",
+      company: "Commission on Higher Education (CAR)",
+      location: "Baguio City, Philippines",
+      period: "January 2023 - May 2023",
       responsibilities: [
         "Developed responsive web applications using React and Vue.js",
-        "Collaborated with design team to implement pixel-perfect UIs",
+        "Collaborated with design team to implement pixel-perfect UIs.",
         "Integrated RESTful APIs and managed state with Redux"
       ]
     },
     {
-      title: "Junior Web Developer",
-      company: "StartUp Ventures",
-      location: "San Francisco, CA",
-      period: "2019 - 2020",
+      title: "Frontend Developer",
+      company: "Wisdom EStudy Books",
+      location: "Baguio City, Philippines",
+      period: "2022 - 2022",
       responsibilities: [
-        "Built and maintained company website using HTML, CSS, and JavaScript",
-        "Implemented e-commerce functionality with PHP and MySQL",
-        "Participated in agile development processes"
+        "Part time frontend developer for a startup company.",
+        "Updated frontend of the website to improve user experience.",
+        "Optimized website for better performance and SEO."
       ]
     }
   ];
@@ -118,11 +120,11 @@ const Resume = () => {
           
           <div className="grid md:grid-cols-3 gap-6">
             <div className="card p-6 text-center">
-              <div className="text-3xl font-bold text-blue-400 mb-2">15+</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">5+</div>
               <p className="text-gray-300">Projects Completed</p>
             </div>
             <div className="card p-6 text-center">
-              <div className="text-3xl font-bold text-blue-400 mb-2">3+</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">2+</div>
               <p className="text-gray-300">Years Experience</p>
             </div>
             <div className="card p-6 text-center">
