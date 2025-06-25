@@ -38,7 +38,7 @@ const About = () => {
             <h3 className="text-2xl font-bold mb-6 text-blue-400">Professional Bio</h3>
             <div className="space-y-6 text-gray-300">
               <p>
-                I'm a passionate Full Stack Developer with over 2 years of experience in building 
+                My name is <span className="text-blue-400">John Driner Familaran</span>. I'm a passionate Full Stack Developer with over 2 years of experience in building 
                 scalable web applications and creating exceptional user experiences.
               </p>
               <p>

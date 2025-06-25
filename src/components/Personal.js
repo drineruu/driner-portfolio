@@ -53,15 +53,6 @@ const Personal = () => {
         { icon: <Target size={20} />, text: "User Experience Design" }
     ];
 
-    // Instagram post data - you can replace with your actual post
-    const instagramPost = {
-        url: "https://www.instagram.com/p/DLIW6qLBsGE/?img_index=1", // Replace with your actual Instagram post URL
-        imageUrl: "/path-to-your-instagram-image.jpg", // Replace with your image path or URL
-        caption: "Latest adventure! Check out my recent post about coffee and coding ☕💻",
-        likes: "42",
-        date: "2 days ago"
-    };
-
     return (
         <section id="personal" className="section-padding bg-gray-900/50">
             <div className="container-width">
@@ -96,59 +87,6 @@ const Personal = () => {
                         ))}
                     </div>
                 </div>
-
-                        {/* Latest from Instagram */}
-        <div className="mb-20">
-          <h3 className="text-2xl font-bold text-center mb-12 text-blue-400">Latest from Instagram</h3>
-          <div className="max-w-md mx-auto">
-            <div className="card p-6 hover:scale-105 transition-all duration-300 bg-gradient-to-br from-purple-900/20 to-pink-900/20 border-purple-500/30">
-              {/* Instagram Post Preview */}
-              <div className="space-y-4">
-                {/* Header */}
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
-                    <Instagram size={20} className="text-white" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-white">@driner_dev</p>
-                    <p className="text-gray-400 text-sm">{instagramPost.date}</p>
-                  </div>
-                </div>
-
-                {/* Image Placeholder */}
-                <div className="aspect-square bg-gradient-to-br from-blue-900/30 to-purple-900/30 rounded-lg border border-purple-500/20 flex items-center justify-center">
-                  <div className="text-center text-gray-400">
-                    <Instagram size={48} className="mx-auto mb-2 text-purple-400" />
-                    <p className="text-sm">Instagram Post Preview</p>
-                  </div>
-                </div>
-
-                {/* Caption */}
-                <div className="space-y-2">
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    {instagramPost.caption}
-                  </p>
-                  <div className="flex items-center gap-4 text-gray-400 text-xs">
-                    <span>❤️ {instagramPost.likes} likes</span>
-                    <span>💬 View comments</span>
-                  </div>
-                </div>
-
-                {/* Call to Action */}
-                <a 
-                  href={instagramPost.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 rounded-lg transition-all duration-200 text-white font-medium"
-                >
-                  <Instagram size={16} />
-                  View on Instagram
-                  <ExternalLink size={14} />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Quick Q&A */}
         <div>

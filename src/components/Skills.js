@@ -38,16 +38,16 @@ const Skills = () => {
       icon: <Database size={24} />,
       skills: [
         { name: "MySQL", level: 95 },
-        { name: "PostgreSQL", level: 80 },
-        { name: "MongoDB", level: 75 },
-        { name: "Redis", level: 80 }
+        { name: "Redis", level: 80 },
+        { name: "Firebase", level: 70 },
+        { name: "MongoDB", level: 70 },
       ]
     },
     {
       title: "Development Tools",
       icon: <Settings size={24} />,
       skills: [
-        { name: "Git & GitHub", level: 95 },
+        { name: "Version Control (Git, GitHub, Bitbucket)", level: 95 },
         { name: "Docker", level: 95 },
         { name: "Postman", level: 90 },
         { name: "VS Code and Cursor AI", level: 95 }

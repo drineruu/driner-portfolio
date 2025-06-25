@@ -1,22 +1,23 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Instagram, MessageSquare } from 'lucide-react';
+import { isAvailableForWork } from '../constants/driner-portfolio';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    });
+    
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
       [e.target.name]: e.target.value
     });
-  };
+};
 
-  const handleSubmit = (e) => {
+const handleSubmit = (e) => {
     e.preventDefault();
     // In a real application, you would send this data to your backend
     console.log('Form submitted:', formData);
@@ -121,6 +122,7 @@ const Contact = () => {
             </div>
 
             {/* Availability */}
+            {isAvailableForWork && (
             <div className="mt-12 p-6 bg-green-900/20 border border-green-700 rounded-lg">
               <div className="flex items-center mb-3">
                 <div className="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></div>
@@ -131,6 +133,7 @@ const Contact = () => {
                 Let's discuss how we can work together!
               </p>
             </div>
+            )}
           </div>
 
           {/* Contact Form */}
