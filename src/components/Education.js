@@ -1,0 +1,197 @@
+import React from 'react';
+import { GraduationCap, Award, Calendar, ExternalLink } from 'lucide-react';
+
+const Education = () => {
+  const education = [
+    {
+      degree: "Bachelor of Science in Computer Science",
+      institution: "University of Technology",
+      location: "California, USA",
+      period: "2015 - 2019",
+      gpa: "3.8/4.0",
+      relevant: ["Data Structures & Algorithms", "Database Systems", "Web Development", "Software Engineering"]
+    },
+    {
+      degree: "Full Stack Web Development Bootcamp",
+      institution: "Code Academy Pro",
+      location: "Online",
+      period: "2019",
+      gpa: "Graduated with Distinction",
+      relevant: ["MERN Stack", "DevOps", "Testing", "Project Management"]
+    }
+  ];
+
+  const certifications = [
+    {
+      name: "AWS Certified Solutions Architect",
+      issuer: "Amazon Web Services",
+      date: "2023",
+      credentialId: "AWS-SAA-123456",
+      verifyUrl: "https://aws.amazon.com/verification",
+      logo: "bg-gradient-to-br from-orange-400 to-yellow-500"
+    },
+    {
+      name: "React Developer Certification",
+      issuer: "Meta (Facebook)",
+      date: "2022",
+      credentialId: "META-REACT-789012",
+      verifyUrl: "https://developers.facebook.com/certification",
+      logo: "bg-gradient-to-br from-blue-400 to-cyan-500"
+    },
+    {
+      name: "Google Cloud Professional Developer",
+      issuer: "Google Cloud",
+      date: "2022",
+      credentialId: "GCP-DEV-345678",
+      verifyUrl: "https://cloud.google.com/certification",
+      logo: "bg-gradient-to-br from-green-400 to-blue-500"
+    },
+    {
+      name: "MongoDB Certified Developer",
+      issuer: "MongoDB University",
+      date: "2021",
+      credentialId: "MONGO-DEV-901234",
+      verifyUrl: "https://university.mongodb.com/certification",
+      logo: "bg-gradient-to-br from-green-500 to-green-600"
+    },
+    {
+      name: "JavaScript Algorithms and Data Structures",
+      issuer: "freeCodeCamp",
+      date: "2020",
+      credentialId: "FCC-JS-567890",
+      verifyUrl: "https://freecodecamp.org/certification",
+      logo: "bg-gradient-to-br from-yellow-400 to-orange-500"
+    },
+    {
+      name: "Docker Certified Associate",
+      issuer: "Docker Inc.",
+      date: "2021",
+      credentialId: "DOCKER-DCA-234567",
+      verifyUrl: "https://docker.com/certification",
+      logo: "bg-gradient-to-br from-blue-500 to-indigo-600"
+    }
+  ];
+
+  return (
+    <section id="education" className="section-padding bg-gray-800/50">
+      <div className="container-width">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Education & Certifications</h2>
+          <p className="text-gray-400">My academic background and professional certifications</p>
+        </div>
+
+        {/* Education */}
+        <div className="max-w-4xl mx-auto mb-20">
+          <h3 className="text-2xl font-bold mb-8 text-blue-400 text-center">Education</h3>
+          
+          <div className="space-y-6">
+            {education.map((edu, index) => (
+              <div key={index} className="card p-6">
+                <div className="flex items-start">
+                  <div className="bg-blue-600 p-3 rounded-lg mr-4 flex-shrink-0">
+                    <GraduationCap size={24} className="text-white" />
+                  </div>
+                  
+                  <div className="flex-grow">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+                      <div>
+                        <h4 className="text-xl font-bold text-white mb-1">{edu.degree}</h4>
+                        <p className="text-blue-400 font-medium">{edu.institution}</p>
+                        <p className="text-gray-400 text-sm">{edu.location}</p>
+                      </div>
+                      <div className="text-right mt-2 md:mt-0">
+                        <div className="flex items-center text-gray-400 mb-1 md:justify-end">
+                          <Calendar size={16} className="mr-2" />
+                          <span className="text-sm">{edu.period}</span>
+                        </div>
+                        <p className="text-green-400 text-sm font-medium">{edu.gpa}</p>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <h5 className="text-sm font-semibold text-gray-300 mb-2">Relevant Coursework:</h5>
+                      <div className="flex flex-wrap gap-2">
+                        {edu.relevant.map((course, idx) => (
+                          <span
+                            key={idx}
+                            className="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs"
+                          >
+                            {course}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Certifications */}
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-2xl font-bold mb-8 text-blue-400 text-center">Professional Certifications</h3>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {certifications.map((cert, index) => (
+              <div key={index} className="card p-6 hover:scale-105 transition-transform duration-300">
+                <div className="flex items-start mb-4">
+                  <div className={`w-12 h-12 ${cert.logo} rounded-lg mr-4 flex items-center justify-center flex-shrink-0`}>
+                    <Award size={24} className="text-white" />
+                  </div>
+                  
+                  <div className="flex-grow">
+                    <h4 className="text-lg font-bold text-white mb-1">{cert.name}</h4>
+                    <p className="text-blue-400 text-sm font-medium">{cert.issuer}</p>
+                  </div>
+                </div>
+                
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center text-gray-400">
+                    <Calendar size={16} className="mr-2" />
+                    <span className="text-sm">Issued: {cert.date}</span>
+                  </div>
+                  <p className="text-xs text-gray-500">
+                    Credential ID: {cert.credentialId}
+                  </p>
+                </div>
+                
+                <a
+                  href={cert.verifyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors duration-200"
+                >
+                  <ExternalLink size={16} />
+                  Verify Certificate
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Learning Goals */}
+        <div className="mt-16 text-center">
+          <h3 className="text-2xl font-bold mb-8 text-blue-400">Continuous Learning</h3>
+          <p className="text-gray-300 max-w-3xl mx-auto mb-6">
+            I'm committed to continuous learning and staying updated with the latest technologies. 
+            Currently pursuing advanced certifications in cloud architecture and exploring emerging 
+            technologies like blockchain and AI/ML.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {['Kubernetes', 'GraphQL', 'TypeScript Advanced', 'System Design', 'Microservices'].map((skill, index) => (
+              <span
+                key={index}
+                className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium"
+              >
+                Currently Learning: {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Education; 
