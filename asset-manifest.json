@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/driner-portfolio/static/css/main.73247317.css",
+    "main.js": "/driner-portfolio/static/js/main.705b3000.js",
+    "static/js/453.6fd6f76a.chunk.js": "/driner-portfolio/static/js/453.6fd6f76a.chunk.js",
+    "index.html": "/driner-portfolio/index.html",
+    "main.73247317.css.map": "/driner-portfolio/static/css/main.73247317.css.map",
+    "main.705b3000.js.map": "/driner-portfolio/static/js/main.705b3000.js.map",
+    "453.6fd6f76a.chunk.js.map": "/driner-portfolio/static/js/453.6fd6f76a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73247317.css",
+    "static/js/main.705b3000.js"
+  ]
+}
