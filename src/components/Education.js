@@ -22,52 +22,36 @@ const Education = () => {
   ];
 
   const certifications = [
+    // {
+    //   name: "Google Cloud Professional Developer",
+    //   issuer: "Google Cloud",
+    //   date: "2022",
+    //   credentialId: "GCP-DEV-345678",
+    //   verifyUrl: "https://cloud.google.com/certification",
+    //   logo: "bg-gradient-to-br from-green-400 to-blue-500"
+    // },
     {
-      name: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
+      name: "Civil Service Examination - Professional Level Passer",
+      issuer: "Civil Service Commission",
       date: "2023",
-      credentialId: "AWS-SAA-123456",
-      verifyUrl: "https://aws.amazon.com/verification",
-      logo: "bg-gradient-to-br from-orange-400 to-yellow-500"
-    },
-    {
-      name: "React Developer Certification",
-      issuer: "Meta (Facebook)",
-      date: "2022",
-      credentialId: "META-REACT-789012",
-      verifyUrl: "https://developers.facebook.com/certification",
-      logo: "bg-gradient-to-br from-blue-400 to-cyan-500"
-    },
-    {
-      name: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      date: "2022",
-      credentialId: "GCP-DEV-345678",
-      verifyUrl: "https://cloud.google.com/certification",
-      logo: "bg-gradient-to-br from-green-400 to-blue-500"
-    },
-    {
-      name: "MongoDB Certified Developer",
-      issuer: "MongoDB University",
-      date: "2021",
-      credentialId: "MONGO-DEV-901234",
-      verifyUrl: "https://university.mongodb.com/certification",
+      credentialId: "CSC-2023",
+      verifyUrl: "",
       logo: "bg-gradient-to-br from-green-500 to-green-600"
     },
     {
-      name: "JavaScript Algorithms and Data Structures",
-      issuer: "freeCodeCamp",
-      date: "2020",
-      credentialId: "FCC-JS-567890",
-      verifyUrl: "https://freecodecamp.org/certification",
+      name: "Certificate of Excellence (Internship)",
+      issuer: "Commission on Higher Education (CAR)",
+      date: "2023",
+      credentialId: "COE-2023",
+      verifyUrl: "",
       logo: "bg-gradient-to-br from-yellow-400 to-orange-500"
     },
     {
-      name: "Docker Certified Associate",
-      issuer: "Docker Inc.",
-      date: "2021",
-      credentialId: "DOCKER-DCA-234567",
-      verifyUrl: "https://docker.com/certification",
+      name: "Google I/O Extended 2022: Web Edition BCDxBGOxCDO",
+      issuer: "Google",
+      date: "2022",
+      credentialId: "BCDxBGOxCDO",
+      verifyUrl: "",
       logo: "bg-gradient-to-br from-blue-500 to-indigo-600"
     }
   ];

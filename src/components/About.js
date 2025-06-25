@@ -1,6 +1,6 @@
 import React from 'react';
 import { Code, Database, Globe, Server } from 'lucide-react';
-import Image from '../assets/images/driner-chibi.png';
+import Image from '../assets/images/driner-prof.png';
 
 const About = () => {
   const techStack = [
@@ -21,7 +21,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Professional Photo */}
           <div className="order-2 lg:order-1">
-            <div className="w-80 h-80 mx-auto">
+            <div className="w-96 h-96 mx-auto">
             <img 
                 src={Image}
                 alt="Driner - Full Stack Developer" 
@@ -39,17 +39,14 @@ const About = () => {
             <div className="space-y-6 text-gray-300">
               <p>
                 I'm a passionate Full Stack Developer with over 2 years of experience in building 
-                scalable web applications and creating exceptional user experiences. I specialize in 
-                modern JavaScript frameworks and have a strong background in both frontend and backend development.
+                scalable web applications and creating exceptional user experiences.
               </p>
               <p>
-                My journey in software development started with a curiosity about how things work on the web. 
-                This curiosity has evolved into a career where I get to solve complex problems and build 
-                solutions that make a real impact.
+                As a Software Engineer, I embody the values of persistence, diligence, and empathy, which have contributed to my success in solo and collaborative projects.
               </p>
               <p>
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source 
-                projects, or sharing my knowledge through blog posts and mentoring other developers.
+                With my passion for problem-solving, perpetual learning, and design, I have honed my skill set - tailored for web and software development.
+                I possess a team player spirit which has driven me to contribute within teams and achieve common objectives actively.
               </p>
             </div>
 
@@ -58,7 +55,6 @@ const About = () => {
               <ul className="space-y-2 text-gray-300">
                 <li>• Building scalable and maintainable backend systems</li>
                 <li>• Exploring cloud technologies and DevOps practices</li>
-                <li>• Contributing to open-source projects</li>
                 <li>• Mentoring junior developers</li>
                 <li>• Staying updated with the latest tech trends</li>
               </ul>

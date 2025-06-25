@@ -28,7 +28,7 @@ const Contact = () => {
     {
       icon: <Mail size={24} />,
       title: "Email",
-      content: "jnerfamilaranr@gmail.com",
+      content: "jnerfamilaran@gmail.com",
       link: "mailto:jnerfamilaran@gmail.com"
     },
     {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, FileText, MapPin, Calendar, Briefcase } from 'lucide-react';
+import { Download, MapPin, Calendar, Briefcase } from 'lucide-react';
 
 const Resume = () => {
   const workExperience = [
@@ -57,15 +57,6 @@ const Resume = () => {
             >
               <Download size={20} />
               Download Resume (PDF)
-            </a>
-            <a
-              href="/driner-resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 btn-secondary px-6 py-3"
-            >
-              <FileText size={20} />
-              View Online
             </a>
           </div>
         </div>
@@ -128,7 +119,7 @@ const Resume = () => {
               <p className="text-gray-300">Years Experience</p>
             </div>
             <div className="card p-6 text-center">
-              <div className="text-3xl font-bold text-blue-400 mb-2">40%</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">80%</div>
               <p className="text-gray-300">Performance Improvement</p>
             </div>
           </div>

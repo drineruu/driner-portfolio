@@ -37,7 +37,9 @@ const Header = () => {
       <nav className="container-width">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-white">Driner</h1>
+            <h1 className="ml-10 text-xl font-bold text-white">
+              <span className="text-blue-400">Dry's</span> Portfolio
+            </h1>
           </div>
           
           {/* Desktop Navigation */}
