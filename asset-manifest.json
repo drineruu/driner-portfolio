@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/driner-portfolio/static/css/main.73247317.css",
-    "main.js": "/driner-portfolio/static/js/main.705b3000.js",
+    "main.css": "/driner-portfolio/static/css/main.27ab59ae.css",
+    "main.js": "/driner-portfolio/static/js/main.9684c8b5.js",
     "static/js/453.6fd6f76a.chunk.js": "/driner-portfolio/static/js/453.6fd6f76a.chunk.js",
+    "static/media/driner-chibi.png": "/driner-portfolio/static/media/driner-chibi.7e9eb129380172347f53.png",
     "index.html": "/driner-portfolio/index.html",
-    "main.73247317.css.map": "/driner-portfolio/static/css/main.73247317.css.map",
-    "main.705b3000.js.map": "/driner-portfolio/static/js/main.705b3000.js.map",
+    "main.27ab59ae.css.map": "/driner-portfolio/static/css/main.27ab59ae.css.map",
+    "main.9684c8b5.js.map": "/driner-portfolio/static/js/main.9684c8b5.js.map",
     "453.6fd6f76a.chunk.js.map": "/driner-portfolio/static/js/453.6fd6f76a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73247317.css",
-    "static/js/main.705b3000.js"
+    "static/css/main.27ab59ae.css",
+    "static/js/main.9684c8b5.js"
   ]
 }
