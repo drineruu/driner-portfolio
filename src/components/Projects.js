@@ -50,7 +50,7 @@ const Projects = () => {
             <div key={project.id} className="card group hover:scale-105 transition-all duration-300">
               {/* Project Image Placeholder */}
               <div className={`h-48 ${project.image} rounded-t-lg flex items-center justify-center`}>
-                <span className="text-white text-lg font-semibold">Project Screenshot</span>
+                <span className="text-white text-lg font-semibold"></span>
               </div>
               
               <div className="p-6">

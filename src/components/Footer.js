@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Mail, Heart, ArrowUp } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, Coffee, ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -55,7 +55,7 @@ const Footer = () => {
     <footer className="bg-gray-900 border-t border-gray-800">
       <div className="container-width">
         {/* Main Footer Content */}
-        <div className="py-12">
+        <div className="py-12 px-6">
           <div className="grid md:grid-cols-4 gap-8">
             {/* Brand Section */}
             <div className="md:col-span-2">
@@ -119,9 +119,8 @@ const Footer = () => {
         <div className="py-6 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center text-gray-400 text-sm mb-4 md:mb-0">
-              <span>© {currentYear} Driner. Made with</span>
-              <Heart size={16} className="mx-2 text-red-400 fill-current" />
-              <span>using React & Tailwind CSS</span>
+              <span>© {currentYear} Driner • </span>
+              <Coffee size={16} className="mx-2 text-blue-400 fill-current" />
             </div>
             
             <div className="flex items-center space-x-6">

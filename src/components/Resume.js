@@ -22,9 +22,10 @@ const Resume = () => {
       location: "Baguio City, Philippines",
       period: "January 2023 - May 2023",
       responsibilities: [
-        "Developed responsive web applications using React and Vue.js",
-        "Collaborated with design team to implement pixel-perfect UIs.",
-        "Integrated RESTful APIs and managed state with Redux"
+        "Developed a web app for tracking employee leave and managing file documentation, boosting efficiency and transparency.",
+        "Maintained and debugged a scholarship system to ensure secure and reliable operations.",
+        "Handled software installations, upgrades, and seamless integration of system components.",
+        "Supported network administration and resolved IT issues to maintain system stability."
       ]
     },
     {

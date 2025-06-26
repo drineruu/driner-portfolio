@@ -106,7 +106,7 @@ const Personal = () => {
                     <div className="card p-8 max-w-2xl mx-auto bg-gradient-to-r from-blue-900/20 to-purple-900/20 border-blue-500/30">
                         <h4 className="text-xl font-bold mb-4 text-blue-400">Fun Fact</h4>
                         <p className="text-gray-300 text-lg">
-                            I cant start a day without a cup of coffee. I get signs of caffeine withrawal wich i think is no longer good (seriously) 😅😭
+                            I can't start a day without a cup of coffee. I get signs of caffeine withdrawal which I think is no longer good (seriously) 😅😭
                         </p>
                     </div>
                 </div>
