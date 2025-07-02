@@ -34,6 +34,120 @@
   }
 }
 
+/* Diagonal floating animations for hero background */
+@keyframes float-diagonal {
+  0% {
+    transform: translate(-100px, 100px);
+    opacity: 0;
+  }
+  3% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 0.4;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  92% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translate(calc(100vw + 200px), -100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes float-diagonal-slow {
+  0% {
+    transform: translate(100px, 100px);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.4;
+  }
+  25% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  88% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translate(calc(-100vw - 200px), -100vh);
+    opacity: 0;
+  }
+}
+
+/* Additional floating animations for variety */
+@keyframes float-horizontal {
+  0% {
+    transform: translate(-200px, 0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  85% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(calc(120vw), 0);
+    opacity: 0;
+  }
+}
+
+@keyframes float-vertical {
+  0% {
+    transform: translate(0, 100px);
+    opacity: 0;
+  }
+  8% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(0, calc(-120vh));
+    opacity: 0;
+  }
+}
+
+.animate-float-diagonal {
+  animation: float-diagonal linear infinite;
+  opacity: 0; /* Ensure hidden by default */
+}
+
+.animate-float-diagonal-slow {
+  animation: float-diagonal-slow linear infinite;
+  opacity: 0; /* Ensure hidden by default */
+}
+
+.animate-float-horizontal {
+  animation: float-horizontal linear infinite;
+  opacity: 0; /* Ensure hidden by default */
+}
+
+.animate-float-vertical {
+  animation: float-vertical linear infinite;
+  opacity: 0; /* Ensure hidden by default */
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

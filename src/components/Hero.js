@@ -2,6 +2,7 @@ import React from 'react';
 import { ChevronDown, Github, Linkedin, Instagram } from 'lucide-react';
 import profileImage from '../assets/images/driner-chibi.png';
 import Typewriter from 'typewriter-effect';
+import { codeSnippets } from '../data/codeSnippets';
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -13,7 +14,65 @@ const Hero = () => {
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="container-width section-padding">
+      {/* Animated Code Background */}
+      <div className="absolute inset-0 opacity-40 pointer-events-none">
+        <div className="relative w-full h-full">
+          {codeSnippets.map((snippet, index) => {
+            const textSizes = ['text-xs', 'text-sm', 'text-base', 'text-lg', 'text-xl', 'text-2xl'];
+            const colors = ['text-blue-600', 'text-green-600', 'text-purple-600', 'text-cyan-600', 'text-pink-600', 'text-yellow-600', 'text-indigo-600', 'text-emerald-600'];
+            const animations = ['animate-float-diagonal', 'animate-float-horizontal', 'animate-float-vertical'];
+            const randomSize = textSizes[Math.floor(Math.random() * textSizes.length)];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            const randomAnimation = animations[Math.floor(Math.random() * animations.length)];
+            
+            return (
+              <div
+                key={index}
+                className={`absolute ${randomColor} font-mono ${randomSize} whitespace-nowrap ${randomAnimation}`}
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  animationDelay: `${Math.random() * 3}s`,
+                  animationDuration: `${12 + Math.random() * 8}s`,
+                }}
+              >
+                {snippet}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Additional floating code elements with different speeds */}
+      <div className="absolute inset-0 opacity-5 pointer-events-none">
+        <div className="relative w-full h-full">
+          {codeSnippets.slice(0, 15).map((snippet, index) => {
+            const textSizes = ['text-xs', 'text-sm', 'text-base', 'text-lg', 'text-xl'];
+            const colors = ['text-purple-400', 'text-orange-400', 'text-teal-400', 'text-rose-400', 'text-amber-400', 'text-lime-400', 'text-violet-400', 'text-sky-400'];
+            const slowAnimations = ['animate-float-diagonal-slow', 'animate-float-horizontal', 'animate-float-vertical'];
+            const randomSize = textSizes[Math.floor(Math.random() * textSizes.length)];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            const randomSlowAnimation = slowAnimations[Math.floor(Math.random() * slowAnimations.length)];
+            
+            return (
+              <div
+                key={`slow-${index}`}
+                className={`absolute ${randomColor} font-mono ${randomSize} whitespace-nowrap ${randomSlowAnimation}`}
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  animationDelay: `${Math.random() * 5}s`,
+                  animationDuration: `${20 + Math.random() * 10}s`,
+                }}
+              >
+                {snippet}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="container-width section-padding relative z-10">
         <div className="animate-fade-in">
           {/* Main Content - Two Column Layout */}
           <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20 max-w-6xl mx-auto">
@@ -107,7 +166,7 @@ const Hero = () => {
       {/* Scroll indicator */}
       <button 
         onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-400 hover:text-white transition-colors duration-200 animate-bounce"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-400 hover:text-white transition-colors duration-200 animate-bounce relative z-10"
       >
         <ChevronDown size={32} />
       </button>
