@@ -2,30 +2,51 @@ import React from 'react';
 import {
     BrainCog,
     Bot,
+    BookOpenText,
     Car,
     Coffee,
-    Music,
-    Gamepad2,
     Bike,
     Code2,
     Heart,
     Zap,
     Target,
-    Instagram,
-    ExternalLink,
     Mountain,
 } from 'lucide-react';
 
 const Personal = () => {
     const hobbies = [
-        { icon: <Coffee size={24} />, name: 'Cafe Hopping', description: 'Always on the hunt for cozy spots and great coffee. Sometimes I even brew my own.' },
-        { icon: <Mountain size={24} />, name: 'Hiking and Camping', description: 'Extreme hiking trails and survival skills is the best way to challenge myself.' },
-        { icon: <Gamepad2 size={24} />, name: 'Gaming', description: 'Big fan of League of Legends. An ARAM enjoyer indeed.' },
-        { icon: <Car size={24} />, name: 'Travelling', description: 'Exploring new places excites me! Whether it’s a weekend getaway or a long road trip.' },
-        { icon: <Bike size={24} />, name: 'Rides', description: 'Cruising around on my scooter is my kind of therapy — chill rides, long thoughts.' },
-        { icon: <Code2 size={24} />, name: 'Learning', description: 'I also explore new tools, frameworks, and backend concepts.' },
+        {
+            icon: <BookOpenText size={24} />,
+            name: 'Ministry',
+            description: <>As one of Jehovah's Witnesses, I find joy in sharing the good news with others and helping them discover hope through the Bible. Visit our website at <a href="https://www.jw.org" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">jw.org</a>!</>
+        },
+        {
+            icon: <Coffee size={24} />,
+            name: 'Cafe Hopping',
+            description: 'Always on the hunt for cozy spots and great coffee. Sometimes I even brew my own.'
+        },
+        {
+            icon: <Mountain size={24} />,
+            name: 'Hiking and Camping',
+            description: 'Extreme hiking trails and survival skills is the best way to challenge myself.'
+        },
+        {
+            icon: <Car size={24} />,
+            name: 'Travelling',
+            description: 'Exploring new places excites me! Whether it\'s a weekend getaway or a long road trip.'
+        },
+        {
+            icon: <Bike size={24} />,
+            name: 'Rides',
+            description: 'Cruising around on my scooter is my kind of therapy — chill rides, long thoughts.'
+        },
+        {
+            icon: <Code2 size={24} />,
+            name: 'Learning',
+            description: 'I also explore new tools, frameworks, and backend concepts.'
+        },
     ];
-    
+
     const quickQA = [
         {
             question: "What's your coding fuel?",
@@ -88,9 +109,9 @@ const Personal = () => {
                     </div>
                 </div>
 
-        {/* Quick Q&A */}
-        <div>
-          <h3 className="text-2xl font-bold text-center mb-12 text-blue-400">Quick Fire Questions</h3>
+                {/* Quick Q&A */}
+                <div>
+                    <h3 className="text-2xl font-bold text-center mb-12 text-blue-400">Quick Fire Questions</h3>
                     <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                         {quickQA.map((qa, index) => (
                             <div key={index} className="card p-6 hover:scale-105 transition-all duration-300">
