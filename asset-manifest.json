@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/driner-portfolio/static/css/main.b4d42d80.css",
-    "main.js": "/driner-portfolio/static/js/main.476a3076.js",
+    "main.css": "/driner-portfolio/static/css/main.3ae0ee84.css",
+    "main.js": "/driner-portfolio/static/js/main.af42c08c.js",
     "static/js/453.6fd6f76a.chunk.js": "/driner-portfolio/static/js/453.6fd6f76a.chunk.js",
     "static/media/IMG_9612.png": "/driner-portfolio/static/media/IMG_9612.e94833c24650f135f42b.png",
     "static/media/driner-prof.png": "/driner-portfolio/static/media/driner-prof.1876046d89adcaae783a.png",
@@ -13,12 +13,12 @@
     "static/media/driner-chibi.png": "/driner-portfolio/static/media/driner-chibi.7e9eb129380172347f53.png",
     "static/media/IMG_5125.jpg": "/driner-portfolio/static/media/IMG_5125.ff1b1165a2075df40126.jpg",
     "index.html": "/driner-portfolio/index.html",
-    "main.b4d42d80.css.map": "/driner-portfolio/static/css/main.b4d42d80.css.map",
-    "main.476a3076.js.map": "/driner-portfolio/static/js/main.476a3076.js.map",
+    "main.3ae0ee84.css.map": "/driner-portfolio/static/css/main.3ae0ee84.css.map",
+    "main.af42c08c.js.map": "/driner-portfolio/static/js/main.af42c08c.js.map",
     "453.6fd6f76a.chunk.js.map": "/driner-portfolio/static/js/453.6fd6f76a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4d42d80.css",
-    "static/js/main.476a3076.js"
+    "static/css/main.3ae0ee84.css",
+    "static/js/main.af42c08c.js"
   ]
 }
