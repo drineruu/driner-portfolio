@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Mail, Coffee, ArrowUp } from 'lucide-react';
+import { Github, Linkedin, Instagram, Mail, Coffee, ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -19,25 +19,25 @@ const Footer = () => {
     {
       icon: <Github size={20} />,
       name: "GitHub",
-      url: "https://github.com/yourusername",
+      url: "https://github.com/drineruu",
       color: "hover:text-gray-300"
     },
     {
       icon: <Linkedin size={20} />,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://linkedin.com/in/jnerfamilaran",
       color: "hover:text-blue-400"
     },
     {
-      icon: <Twitter size={20} />,
-      name: "Twitter",
-      url: "https://twitter.com/yourusername",
+      icon: <Instagram size={20} />,
+      name: "Instagram",
+      url: "https://instagram.com/dri.ner",
       color: "hover:text-sky-400"
     },
     {
       icon: <Mail size={20} />,
       name: "Email",
-      url: "mailto:your.email@example.com",
+      url: "mailto:jnerfamilaran@gmail.com",
       color: "hover:text-green-400"
     }
   ];
@@ -155,7 +155,7 @@ const Footer = () => {
             <p className="text-xs text-gray-500">
               This portfolio is open source and available on{' '}
               <a 
-                href="https://github.com/yourusername/portfolio" 
+                href="https://github.com/drineruu/driner-portfolio" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 transition-colors duration-200"

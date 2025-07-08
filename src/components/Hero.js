@@ -1,6 +1,7 @@
 import React from 'react';
 import { ChevronDown, Github, Linkedin, Instagram } from 'lucide-react';
 import profileImage from '../assets/images/driner-chibi.png';
+import profileImage2 from '../assets/images/driner-box.png';
 import Typewriter from 'typewriter-effect';
 import { codeSnippets } from '../data/codeSnippets';
 
@@ -15,7 +16,7 @@ const Hero = () => {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated Code Background */}
-      <div className="absolute inset-0 opacity-40 pointer-events-none">
+      <div className="absolute inset-0 opacity-20 pointer-events-none">
         <div className="relative w-full h-full">
           {codeSnippets.map((snippet, index) => {
             const textSizes = ['text-xs', 'text-sm', 'text-base', 'text-lg', 'text-xl', 'text-2xl'];
@@ -143,19 +144,35 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Right Column - Profile Image */}
+            {/* Right Column - Profile Image with Flip Animation */}
             <div className="flex-shrink-0 order-first lg:order-last">
               <div className="w-64 h-64 lg:w-80 lg:h-80 relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full p-1">
-                  <img 
-                    src={profileImage}
-                    alt="Driner - Full Stack Developer" 
-                    className="w-full h-full object-cover rounded-full bg-gray-900"
-                    onError={(e) => {
-                      console.error('Image failed to load:', e.target.src);
-                    }}
-                    onLoad={() => console.log('Image loaded successfully')}
-                  />
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full p-1 flip-container">
+                  <div className="flip-inner bg-gray-900 rounded-full">
+                    {/* Front face */}
+                    <div className="flip-front">
+                      <img 
+                        src={profileImage}
+                        alt="Driner - Profile Front" 
+                        className="w-full h-full object-cover rounded-full"
+                        onError={(e) => {
+                          console.error('Front image failed to load:', e.target.src);
+                        }}
+                      />
+                    </div>
+                    {/* Back face */}
+                    <div className="flip-back">
+                      <img 
+                        src={profileImage2}
+                        alt="Driner - Profile Back" 
+                        className="w-full h-full object-cover rounded-full"
+                        onError={(e) => {
+                          console.error('Back image failed to load, using fallback:', e.target.src);
+                          e.target.src = profileImage; // Fallback to first image if second doesn't exist
+                        }}
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
