@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/driner-portfolio/static/css/main.d496693d.css",
-    "main.js": "/driner-portfolio/static/js/main.521b23b4.js",
+    "main.css": "/driner-portfolio/static/css/main.08ad1bfd.css",
+    "main.js": "/driner-portfolio/static/js/main.3675ea5b.js",
     "static/js/453.6fd6f76a.chunk.js": "/driner-portfolio/static/js/453.6fd6f76a.chunk.js",
     "static/media/driner-box.png": "/driner-portfolio/static/media/driner-box.a1ff1c0fff78c93798eb.png",
     "static/media/driner-prof.png": "/driner-portfolio/static/media/driner-prof.1876046d89adcaae783a.png",
     "static/media/driner-chibi.png": "/driner-portfolio/static/media/driner-chibi.7e9eb129380172347f53.png",
     "index.html": "/driner-portfolio/index.html",
-    "main.d496693d.css.map": "/driner-portfolio/static/css/main.d496693d.css.map",
-    "main.521b23b4.js.map": "/driner-portfolio/static/js/main.521b23b4.js.map",
+    "main.08ad1bfd.css.map": "/driner-portfolio/static/css/main.08ad1bfd.css.map",
+    "main.3675ea5b.js.map": "/driner-portfolio/static/js/main.3675ea5b.js.map",
     "453.6fd6f76a.chunk.js.map": "/driner-portfolio/static/js/453.6fd6f76a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d496693d.css",
-    "static/js/main.521b23b4.js"
+    "static/css/main.08ad1bfd.css",
+    "static/js/main.3675ea5b.js"
   ]
 }
