@@ -1,29 +1,58 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Instagram, MessageSquare } from 'lucide-react';
 import { isAvailableForWork } from '../constants/driner-portfolio';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const form = useRef();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         subject: '',
         message: ''
     });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState(null); // 'success' or 'error'
     
     const handleChange = (e) => {
         setFormData({
             ...formData,
-      [e.target.name]: e.target.value
-    });
-};
+            [e.target.name]: e.target.value
+        });
+    };
 
-const handleSubmit = (e) => {
-    e.preventDefault();
-    // In a real application, you would send this data to your backend
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I\'ll get back to you soon.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
-  };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setSubmitStatus(null);
+
+        // EmailJS configuration
+        const templateParams = {
+            from_name: formData.name,
+            from_email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+            to_name: 'Driner',
+        };
+
+        emailjs.send(
+            'service_d534avr', // Replace with your actual Service ID
+            'template_fmwtfij', // Replace with your actual Template ID
+            templateParams,
+            'DABrSPQHoyZdEhygY' // Replace with your actual Public Key
+        )
+        .then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            setSubmitStatus('success');
+            setFormData({ name: '', email: '', subject: '', message: '' });
+            setIsSubmitting(false);
+        })
+        .catch((err) => {
+            console.log('FAILED...', err);
+            setSubmitStatus('error');
+            setIsSubmitting(false);
+        });
+    };
 
   const contactInfo = [
     {
@@ -140,7 +169,7 @@ const handleSubmit = (e) => {
           <div>
             <h3 className="text-2xl font-bold mb-8 text-blue-400">Send Message</h3>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form ref={form} onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
@@ -206,12 +235,39 @@ const handleSubmit = (e) => {
                 ></textarea>
               </div>
               
+              {/* Status Messages */}
+              {submitStatus === 'success' && (
+                <div className="p-4 bg-green-900/20 border border-green-700 rounded-lg">
+                  <p className="text-green-400 font-medium">✅ Message sent successfully! I'll get back to you soon.</p>
+                </div>
+              )}
+              
+              {submitStatus === 'error' && (
+                <div className="p-4 bg-red-900/20 border border-red-700 rounded-lg">
+                  <p className="text-red-400 font-medium">❌ Failed to send message. Please try again or contact me directly at jnerfamilaran@gmail.com</p>
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                disabled={isSubmitting}
+                className={`w-full font-medium py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2 ${
+                  isSubmitting 
+                    ? 'bg-gray-600 text-gray-400 cursor-not-allowed' 
+                    : 'bg-blue-600 hover:bg-blue-700 text-white'
+                }`}
               >
-                <Send size={20} />
-                Send Message
+                {isSubmitting ? (
+                  <>
+                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    <Send size={20} />
+                    Send Message
+                  </>
+                )}
               </button>
             </form>
           </div>

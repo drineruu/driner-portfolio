@@ -22,14 +22,6 @@ const Education = () => {
   ];
 
   const certifications = [
-    // {
-    //   name: "Google Cloud Professional Developer",
-    //   issuer: "Google Cloud",
-    //   date: "2022",
-    //   credentialId: "GCP-DEV-345678",
-    //   verifyUrl: "https://cloud.google.com/certification",
-    //   logo: "bg-gradient-to-br from-green-400 to-blue-500"
-    // },
     {
       name: "Civil Service Examination - Professional Level Passer",
       issuer: "Civil Service Commission",
@@ -150,26 +142,6 @@ const Education = () => {
                   Verify Certificate
                 </a>
               </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Learning Goals */}
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl font-bold mb-8 text-blue-400">Continuous Learning</h3>
-          <p className="text-gray-300 max-w-3xl mx-auto mb-6">
-            I'm committed to continuous learning and staying updated with the latest technologies. 
-            Currently pursuing advanced certifications in cloud architecture and exploring emerging 
-            technologies like blockchain and AI/ML.
-          </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {['Kubernetes', 'GraphQL', 'TypeScript Advanced', 'System Design', 'Microservices'].map((skill, index) => (
-              <span
-                key={index}
-                className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium"
-              >
-                Currently Learning: {skill}
-              </span>
             ))}
           </div>
         </div>

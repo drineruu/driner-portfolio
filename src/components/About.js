@@ -21,8 +21,8 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Professional Photo */}
           <div className="order-2 lg:order-1">
-            <div className="w-96 h-96 mx-auto">
-            <img 
+            <div className="w-96 mx-auto">
+              <img 
                 src={Image}
                 alt="Driner - Full Stack Developer" 
                 className="w-full h-full object-cover rounded-2xl shadow-xl border-4 border-blue-500/20"

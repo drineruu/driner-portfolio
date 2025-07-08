@@ -2,7 +2,7 @@
 export const codeSnippets = [
   // JavaScript & Programming Basics
   'const developer = "Driner";',
-  'function createAwesome() {',
+  'function startCoding() {',
   '  return coffee + code;',
   '}',
   'console.log("Hello World");',
@@ -13,7 +13,6 @@ export const codeSnippets = [
   '  await sleep(8);',
   '  return code();',
   '}',
-  'Kliiiirrrrrr',
   'Kliiiirrrrrr',
   
   // React & Frontend
@@ -42,7 +41,7 @@ export const codeSnippets = [
   'git add .',
   
   // NPM & Package Management
-  'npm install happiness',
+  'npm install coffee',
   'npm run dev',
   'yarn build',
   

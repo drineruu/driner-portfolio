@@ -12,6 +12,7 @@ import {
     Target,
     Mountain,
 } from 'lucide-react';
+import ImageCarousel from './ImageCarousel';
 
 const Personal = () => {
     const hobbies = [
@@ -82,17 +83,29 @@ const Personal = () => {
                     <p className="text-gray-400">The person behind the developer</p>
                 </div>
 
-                {/* Hobbies & Interests */}
+                {/* Hobbies & Interests with Image Carousel */}
                 <div className="mb-20">
                     <h3 className="text-2xl font-bold text-center mb-12 text-blue-400">When I'm Not Coding</h3>
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {hobbies.map((hobby, index) => (
-                            <div key={index} className="card p-6 hover:scale-105 transition-all duration-300 hover:border-blue-500/50">
-                                <div className="text-blue-400 mb-4">{hobby.icon}</div>
-                                <h4 className="text-lg font-semibold mb-2">{hobby.name}</h4>
-                                <p className="text-gray-400 text-sm">{hobby.description}</p>
+                    <div className="grid lg:grid-cols-2 gap-12 items-center">
+                        {/* Image Carousel */}
+                        <div className="order-2 lg:order-1">
+                            <div className="sticky">
+                                <ImageCarousel />
                             </div>
-                        ))}
+                        </div>
+                        
+                        {/* Hobbies Grid */}
+                        <div className="order-1 lg:order-2">
+                            <div className="grid sm:grid-cols-2 gap-6">
+                                {hobbies.map((hobby, index) => (
+                                    <div key={index} className="card p-6 hover:scale-105 transition-all duration-300 hover:border-blue-500/50">
+                                        <div className="text-blue-400 mb-4">{hobby.icon}</div>
+                                        <h4 className="text-lg font-semibold mb-2">{hobby.name}</h4>
+                                        <p className="text-gray-400 text-sm">{hobby.description}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
 
