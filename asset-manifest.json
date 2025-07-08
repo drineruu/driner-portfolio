@@ -1,26 +1,24 @@
 {
   "files": {
     "main.css": "/driner-portfolio/static/css/main.b4d42d80.css",
-    "main.js": "/driner-portfolio/static/js/main.f04a9a3a.js",
+    "main.js": "/driner-portfolio/static/js/main.476a3076.js",
     "static/js/453.6fd6f76a.chunk.js": "/driner-portfolio/static/js/453.6fd6f76a.chunk.js",
-    "static/media/driner-box.png": "/driner-portfolio/static/media/driner-box.a1ff1c0fff78c93798eb.png",
+    "static/media/IMG_9612.png": "/driner-portfolio/static/media/IMG_9612.e94833c24650f135f42b.png",
     "static/media/driner-prof.png": "/driner-portfolio/static/media/driner-prof.1876046d89adcaae783a.png",
-    "static/media/IMG_6823.png": "/driner-portfolio/static/media/IMG_6823.8577f6342739aabef3ce.png",
-    "static/media/IMG_9612.png": "/driner-portfolio/static/media/IMG_9612.97aa97e73439f0d5ace7.png",
-    "static/media/IMG_4986.png": "/driner-portfolio/static/media/IMG_4986.e2aa8939bb055546d04d.png",
-    "static/media/IMG_5135.png": "/driner-portfolio/static/media/IMG_5135.f4ac50c8f7de949bd28c.png",
-    "static/media/20250608_091842.jpeg": "/driner-portfolio/static/media/20250608_091842.a52e35d28011be3533ce.jpeg",
+    "static/media/IMG_4986.png": "/driner-portfolio/static/media/IMG_4986.30ece3883e21a792baac.png",
+    "static/media/IMG_5135.png": "/driner-portfolio/static/media/IMG_5135.f5e6c9f433db4535c061.png",
+    "static/media/driner-box.png": "/driner-portfolio/static/media/driner-box.04249295a9df728add82.png",
     "static/media/IMG_5645.jpg": "/driner-portfolio/static/media/IMG_5645.99174ac6d9695a07be0f.jpg",
-    "static/media/IMG_1797_Original.jpg": "/driner-portfolio/static/media/IMG_1797_Original.461d22520fd798b5b199.jpg",
+    "static/media/IMG_1797.jpg": "/driner-portfolio/static/media/IMG_1797.53ea91b2142e78e16532.jpg",
     "static/media/driner-chibi.png": "/driner-portfolio/static/media/driner-chibi.7e9eb129380172347f53.png",
     "static/media/IMG_5125.jpg": "/driner-portfolio/static/media/IMG_5125.ff1b1165a2075df40126.jpg",
     "index.html": "/driner-portfolio/index.html",
     "main.b4d42d80.css.map": "/driner-portfolio/static/css/main.b4d42d80.css.map",
-    "main.f04a9a3a.js.map": "/driner-portfolio/static/js/main.f04a9a3a.js.map",
+    "main.476a3076.js.map": "/driner-portfolio/static/js/main.476a3076.js.map",
     "453.6fd6f76a.chunk.js.map": "/driner-portfolio/static/js/453.6fd6f76a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4d42d80.css",
-    "static/js/main.f04a9a3a.js"
+    "static/js/main.476a3076.js"
   ]
 }
