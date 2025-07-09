@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/driner-portfolio/static/css/main.3ae0ee84.css",
-    "main.js": "/driner-portfolio/static/js/main.af42c08c.js",
+    "main.js": "/driner-portfolio/static/js/main.c14cf60c.js",
     "static/js/453.6fd6f76a.chunk.js": "/driner-portfolio/static/js/453.6fd6f76a.chunk.js",
-    "static/media/IMG_9612.png": "/driner-portfolio/static/media/IMG_9612.e94833c24650f135f42b.png",
-    "static/media/driner-prof.png": "/driner-portfolio/static/media/driner-prof.1876046d89adcaae783a.png",
-    "static/media/IMG_4986.png": "/driner-portfolio/static/media/IMG_4986.30ece3883e21a792baac.png",
-    "static/media/IMG_5135.png": "/driner-portfolio/static/media/IMG_5135.f5e6c9f433db4535c061.png",
-    "static/media/driner-box.png": "/driner-portfolio/static/media/driner-box.04249295a9df728add82.png",
-    "static/media/IMG_5645.jpg": "/driner-portfolio/static/media/IMG_5645.99174ac6d9695a07be0f.jpg",
-    "static/media/IMG_1797.jpg": "/driner-portfolio/static/media/IMG_1797.53ea91b2142e78e16532.jpg",
-    "static/media/driner-chibi.png": "/driner-portfolio/static/media/driner-chibi.7e9eb129380172347f53.png",
-    "static/media/IMG_5125.jpg": "/driner-portfolio/static/media/IMG_5125.ff1b1165a2075df40126.jpg",
+    "static/media/IMG_5645.webp": "/driner-portfolio/static/media/IMG_5645.170df7c2843eaeda751d.webp",
+    "static/media/IMG_1797.webp": "/driner-portfolio/static/media/IMG_1797.c9cc7c412bd408039e65.webp",
+    "static/media/IMG_9612.webp": "/driner-portfolio/static/media/IMG_9612.5520743c6c3a82c62f2e.webp",
+    "static/media/IMG_4986.webp": "/driner-portfolio/static/media/IMG_4986.7e37b8f65dd097a3ecd0.webp",
+    "static/media/IMG_5135.webp": "/driner-portfolio/static/media/IMG_5135.eb0aa28cd17ec5e5965f.webp",
+    "static/media/driner-prof-large.webp": "/driner-portfolio/static/media/driner-prof-large.cec70c71b12cebb58695.webp",
+    "static/media/driner-box-medium.webp": "/driner-portfolio/static/media/driner-box-medium.1c85d602cc2ba5a9a496.webp",
+    "static/media/IMG_5125.webp": "/driner-portfolio/static/media/IMG_5125.19be4ce8b37cb7080fc7.webp",
+    "static/media/driner-chibi-medium.webp": "/driner-portfolio/static/media/driner-chibi-medium.ca80151a5e229b29edd2.webp",
     "index.html": "/driner-portfolio/index.html",
     "main.3ae0ee84.css.map": "/driner-portfolio/static/css/main.3ae0ee84.css.map",
-    "main.af42c08c.js.map": "/driner-portfolio/static/js/main.af42c08c.js.map",
+    "main.c14cf60c.js.map": "/driner-portfolio/static/js/main.c14cf60c.js.map",
     "453.6fd6f76a.chunk.js.map": "/driner-portfolio/static/js/453.6fd6f76a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ae0ee84.css",
-    "static/js/main.af42c08c.js"
+    "static/js/main.c14cf60c.js"
   ]
 }
