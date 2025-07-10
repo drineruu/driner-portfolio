@@ -2,4 +2,4 @@
  * Constants for the portfolio
  */
 
-export const isAvailableForWork = false; 
+export const isAvailableForWork = false;
